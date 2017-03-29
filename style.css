@@ -1,0 +1,327 @@
+	
+*, *:before, *:after {
+  box-sizing: border-box;
+} 
+
+/* font rules */
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Playfair display", serif;
+}
+p{
+	font-family: "raleway",sans-serif;
+	font-size: 1rem;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {font-size: 1.5rem;
+}
+h4 {font-size: 1.25rem;
+}
+h5 {font-size: 1rem;
+}
+a{text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: gray;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+.italic{
+	font-style: italic;
+}
+
+.bold{
+	font-weight: bold;
+}
+.text-shadow{
+	text-shadow: 2px 2px 4px gray;
+}
+.grey {
+	color: grey;
+}
+.white{
+	color: white;
+}
+.red{
+	color: red;
+}
+.underline{
+	text-decoration: underline;
+}
+/* --- General Pos. --- */
+
+.floatleft{
+	float:left;
+}
+.floatright{
+	float: right;
+}
+.clearfix:after {
+	clear: both;
+	content:" ";
+	display: block;
+}
+
+.logo{
+	width:12%;
+	margin:2vh 3vh;
+}
+.cart{
+	width:5%;
+	margin:2vh;
+}
+
+
+/* -- BANNER RULES -- */
+#banner{
+	clear: both;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/flower-bkgd.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 70vh;
+	position: relative;
+}
+
+ #banner-girl{
+ 	position: absolute;
+ 	background-position: top;
+ 	background-repeat: no-repeat;
+ 	bottom: 0;
+ 	left: 50%;
+ 	width: 20%;
+ 	background-size: cover;
+ 	margin-left: -10%;
+ 	background-image: url("images/banner-girl.png");
+ 	z-index:1;
+ 	min-height: 90%;
+}
+
+#banner-text{
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top:50%;
+}
+
+#banner-text h5{
+	font-family: "raleway",sans-serif;
+}
+
+.cta {
+	margin:8vh 0 8vh 0; 
+	line-height: 3rem;
+}
+	
+.products{
+	border-top: 1px solid gray;
+	margin-bottom:6vh;
+}
+
+.products h2{ 	
+margin:8vh 0 7vh 0;
+}
+
+.item-width-25{
+	width: 25%;
+}
+.item-width-25 h3{
+	color:#cc3b3b;
+	line-height:4rem;
+}
+
+.subscribe{
+	background-image: url("images/wave-bkgd.jpg");
+	background-repeat: no-repeat;
+	background-position:bottom;
+	padding-bottom: 14vh;
+}
+
+.subscribe-text{
+	padding-top: 5vh;
+}
+
+.subscribe-text h2{
+	line-height: 3rem;
+}
+
+.subscribe-text p{
+	line-height: 2rem;
+	padding-bottom: 4vh;
+}
+
+.form{
+	width: 25%;
+	margin:0 auto;
+	border-radius: 25px;
+	background-color: white;
+	padding:3px;
+	
+	}
+
+
+	input[type="text"]{
+		width: 70%;
+		border:none;
+		background: none;
+		font-size:0.9rem;
+		font-weight: 300;
+		padding: 10px;
+		color: black;
+	}
+
+	input[type="submit"]{
+		width: 30%;
+		border-radius: 25px;
+		border:none;
+		background-color:red;
+		font-size:0.9rem;
+		padding: 10px;
+		-webkit-appearance: none;
+		
+	}
+	/*.button:hover{
+		background-color: #7c1216;
+		box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+	}*/
+	
+
+footer{
+	border-top:5px solid white;
+	background-color:#232426;
+}
+
+.social{
+	padding: 60px;
+	line-height: 1.9rem;
+	font-family: "raleway",sans-serif;
+}
+
+.info{
+	padding: 60px 20px;
+	font-size: 1rem;
+}
+.info p{
+	font-family: "Playfair display",serif;
+}
+.padding-bottom-med{
+	padding: 2rem 0;
+}
+
+
+/*RESPONSIVE RULES*/
+@media only screen and (max-width: 600px) {
+
+h1 {
+	font-size: 2rem;
+}
+h2{
+	font-size: 2.2rem;
+}
+p{
+	font-size: 1rem;
+	padding: 0 1rem;
+}
+.logo{
+	width:28%;
+	margin:2vh 3vh;
+}
+.cart{
+	width:11%;
+	margin:2vh;
+}
+#banner{
+	background-position: center;
+	min-height: 60vh;
+}
+ #banner-girl{
+ 	width: 40%;
+ 	margin-left: -20%;
+}
+.cta {
+	margin:8vh 0 8vh 0; 
+	line-height: 2.2rem;
+}
+
+.item-width-25{
+	float: none;
+	width: 100%;
+	padding:3vh;
+}
+.item-width-25 p{
+	font-size: 0.7rem;
+}
+.form{
+	width: 80%;
+	}
+.info{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.hide-for-mobile{
+	display: none;
+}
+.social{
+	float: none;
+	text-align: center;
+}
+
+.social ul{
+	text-align: center;
+	display: inline-block;
+}
+
+.social li{
+	padding: 10px;
+	float: left;
+}
+.padding-bottom-med{
+	padding: 1.5rem 0;
+}
+footer{
+	border-top: 10px solid white;
+}
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 600px) {
+
+.logo{
+	width:20%;
+	margin:2vh 3vh;
+}
+.cart{
+	width:7%;
+	margin:2vh;
+}
+
+#banner-girl{
+ 	width: 30%;
+ 	margin-left: -15%;
+ }
+ .item-width-25{
+	width: 50%;
+	padding:3vh;
+}
+.form{
+	width: 45%;
+	}
+
+}
+
+
+
+
+
+
+
+
